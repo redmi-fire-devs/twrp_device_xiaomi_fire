@@ -108,7 +108,7 @@ VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
-TW_DEVICE_VERSION := "Team Win Recovery Project 12.1"
+TW_DEVICE_VERSION := 3.7.0_12.1 Xiaomi Redmi 12
 TW_THEME := portrait_hdpi
 TW_Y_OFFSET := 35
 TW_H_OFFSET := -35
