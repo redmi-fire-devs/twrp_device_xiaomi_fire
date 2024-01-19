@@ -23,6 +23,8 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor \
     vbmeta_system
 BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_NO_RECOVERY := true
+BOARD_USES_METADATA_PARTITION := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -101,11 +103,6 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
-
-# Partitions configs
-BOARD_USES_RECOVERY_AS_BOOT := true
-TARGET_NO_RECOVERY := true
-BOARD_USES_METADATA_PARTITION := true
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
