@@ -1,5 +1,10 @@
-<manifest version="4.0" type="framework">
-    <hal format="hidl">
+<!--
+    Input:
+        manifest.xml
+        framework_manifest.xml
+-->
+<manifest version="5.0" type="framework">
+    <hal format="hidl" max-level="6">
         <name>android.frameworks.displayservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -28,6 +33,26 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ISensorManager/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.1::IBiometricsFingerprint/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.wifi.hostapd</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IHostapd</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IHostapd/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hidl.manager</name>
@@ -88,5 +113,7 @@
         <version>29</version>
         <version>30</version>
         <version>31</version>
+        <version>32</version>
+        <version>33</version>
     </system-sdk>
 </manifest>
