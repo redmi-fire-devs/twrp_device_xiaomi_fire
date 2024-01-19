@@ -17,6 +17,11 @@ service logd-reinit /system/bin/logd --reinit
     group logd
     writepid /dev/cpuset/system-background/tasks
 
+service console /system/bin/sh
+    console
+    enabled
+    user shell
+
 # Limit SELinux denial generation to 5/second
 service logd-auditctl /system/bin/auditctl -r 5
     oneshot
