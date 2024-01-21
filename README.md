@@ -52,6 +52,6 @@ git clone https://github.com/AntarticShaurant/android_device_xiaomi_fire.git dev
 ```bash
 export ALLOW_MISSING_DEPENDENCIES=true
 . build/envsetup.sh
-lunch twrp-fire-eng
+lunch twrp_fire-eng
 mka bootimage
 ```
