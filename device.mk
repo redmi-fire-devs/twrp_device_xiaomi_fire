@@ -31,6 +31,12 @@ PRODUCT_SHARED_BOOT_CONTROL_HAL := \
     libz \
     libcutils
 
+#Fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery \
+    fastbootd
+
 PRODUCT_PACKAGES += \
     otapreopt_script \
     cppreopts.sh \
