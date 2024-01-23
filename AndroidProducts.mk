@@ -8,7 +8,5 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_fire.mk
 
-COMMON_LUNCH_CHOICES := \
-    twrp_fire-user \
-    twrp_fire-userdebug \
-    twrp_fire-eng
+COMMON_LUNCH_CHOICES := twrp_fire-eng
+    
