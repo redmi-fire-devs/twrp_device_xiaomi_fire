@@ -25,8 +25,8 @@ PRODUCT_PACKAGES += \
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service \
-    android.hardware.boot@1.2-mtkimpl \
-    android.hardware.boot@1.2-mtkimpl.recovery
+    android.hardware.boot@1.2-impl \
+    android.hardware.boot@1.2-impl.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl \
@@ -42,8 +42,8 @@ PRODUCT_PACKAGES_DEBUG += \
 
 #Fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    android.hardware.fastboot@1.0-impl-mock.recovery \
+    android.hardware.fastboot@1.1-impl-mock \
+    android.hardware.fastboot@1.1-impl-mock.recovery \
     fastbootd
 
 # Additional binaries & libraries needed for recovery
