@@ -1,11 +1,15 @@
 #
-# Copyright (C) 2023 The Android Open Source Project
-# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+# Copyright (C) 2024 The Android Open Source Project
+# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 LOCAL_PATH := device/xiaomi/fire
+
+# Dynamic
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -20,24 +24,35 @@ PRODUCT_PACKAGES += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-impl.recovery \
-    bootctrl.mt6768\
-    bootctrl.mt6768.recovery \
-    android.hardware.boot@1.0-service
+    android.hardware.boot@1.2-service \
+    android.hardware.boot@1.2-mtkimpl \
+    android.hardware.boot@1.2-mtkimpl.recovery
 
+PRODUCT_PACKAGES_DEBUG += \
+    bootctrl \
+    bootctrl.mt6768 \
+    bootctrl.mt6768.recovery
+
+# MTK PlPath Utils
 PRODUCT_PACKAGES += \
-    bootctrl 
+    mtk_plpath_utils.recovery
 
-#Fastbootd
-PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    fastbootd
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-# API
+ # API 
 PRODUCT_SHIPPING_API_LEVEL := 32
+
+# Additional binaries & libraries needed for recovery
+TARGET_RECOVERY_DEVICE_MODULES += \
+    libkeymaster4 \
+    libkeymaster41 \
+    libpuresoftkeymasterdevice
+
+TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
