@@ -3,12 +3,6 @@ import /init.microtrust.rc
 on init
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw:/system/lib64/hw
 
-on fs
-    setprop sys.usb.configfs 1
-    setprop sys.usb.ffs.aio_compat 0
-    property:ro.debuggable=0
-    start adbd
-
 on post-fs
     # Support A/B feature for EMMC and UFS boot region
     symlink /dev/block/sda /dev/block/mmcblk0boot0
