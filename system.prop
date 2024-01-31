@@ -1,13 +1,11 @@
 ro.mediatek.platform=MT6768
+ro.vendor.mediatek.platform=MT6768
 ro.hardware=mt6768
+ro.sf.lcd_density=440
+ro.boot.dynamic_partitions=true
 ro.secure=0
 ro.adb.secure=0
 ro.debuggable=1
-ro.sf.lcd_density=440
-ro.boot.dynamic_partitions=true
-persist.sys.isUsbOtgEnabled=true
-ro.sys.usb.mtp.whql.enable=0
-ro.sys.usb.storage.type=mtp
 ro.mtk_tee_gp_support=1
 ro.mtk_microtrust_tee_support=1
 fbe.metadata.wrappedkey=true
