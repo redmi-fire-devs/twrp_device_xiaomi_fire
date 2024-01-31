@@ -1,6 +1,6 @@
 # <mount>                    <type>      <path>                                          <mnt_flags and options>
 
-/data                        f2fs        /dev/block/by-name/userdata            
+/storage                     f2fs        /data/media/0                                   flags=display="Internal Storage";usermrf;fsflags="bind";backup=1;removable;
 /cache                       ext4        /dev/block/by-name/rescue                       flags=display="Cache";wipeingui;
 /boot                        emmc        /dev/block/by-name/boot                         flags=display="Boot";slotselect;flashimg=1;backup=1;
 /logo                        emmc        /dev/block/by-name/logo                         flags=display="Logo";slotselect;flashimg=1;backup=1;
@@ -23,7 +23,7 @@
 /spmfw                       emmc        /dev/block/by-name/spmfw                        flags=display="Spmfw";slotselect;
 /boot_para                   emmc        /dev/block/by-name/boot_para             
 /otp                         emmc        /dev/block/by-name/otp
-/cust                        ext4        /dev/block/by-name/cust     
+/cust                        ext4        /dev/block/by-name/cust                         
 /efuse                       emmc        /dev/block/by-name/efuse               
 /preloader                   emmc        /dev/block/by-name/preloader                    flags=display="Preloader";slotselect;
 /preloader_raw               emmc        /dev/block/by-name/preloader_raw                flags=display="Preloader_Raw";slotselect;
