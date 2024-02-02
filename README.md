@@ -34,9 +34,9 @@ It was announced and released in June 2023.
 - [X] poweroff
 - [X] battery level
 - [X] temperature
-- [X] encrypted backups (no option)
+- [ ] encrypted backups (no option)
 - [X] input devices via USB (USB-OTG) - keyboard, mouse and disks
-- [X] USB mass storage export
+- [ ] USB mass storage export
 - [X] set brightness
 - [X] vibrate
 - [X] screenshot
