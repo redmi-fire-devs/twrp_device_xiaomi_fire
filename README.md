@@ -34,9 +34,9 @@ It was announced and released in June 2023.
 - [X] poweroff
 - [X] battery level
 - [X] temperature
-- [ ] encrypted backups (no option)
+- [ ] ~~encrypted backups~~ (no option)
 - [X] input devices via USB (USB-OTG) - keyboard, mouse and disks
-- [ ] USB mass storage export
+- [ ] ~~USB mass storage export~~ (unavailable)
 - [X] set brightness
 - [X] vibrate
 - [X] screenshot
@@ -47,7 +47,7 @@ It was announced and released in June 2023.
 ## WARNING
 
 This device tree is still being tested, use it at your own risk.
-That said, feel free to test it, and report bugs, i'll try my best to solve them.
+That said, feel free to test it, and report bugs, we'll try our best to fix them.
 
 ## How to build
 
