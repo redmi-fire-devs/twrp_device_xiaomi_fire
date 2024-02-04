@@ -146,8 +146,8 @@ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_FRAMERATE := 60
 TW_STATUS_ICONS_ALIGN := center
-TW_Y_OFFSET := 130
-TW_H_OFFSET := -130
+TW_Y_OFFSET := 105
+TW_H_OFFSET := -105
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
