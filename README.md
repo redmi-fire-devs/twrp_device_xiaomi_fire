@@ -1,9 +1,31 @@
 # TWRP Device Tree for Xiaomi Redmi 12
 
-The Xiaomi Redmi 12 (codenamed _"fire"_) is a mid-range smartphone from Xiaomi.
+The Xiaomi Redmi 12 (codenamed _"fire"_) is an entry-level smartphone from Xiaomi.
 
 It was announced and released in June 2023.
 
+$~$
+
+## How to build
+
+1. Set up the build environment following the instructions [here](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp/blob/twrp-12.1/README.md#getting-started)
+
+2. In the root folder of the fetched repo, clone the device tree:
+
+```bash
+git clone https://github.com/AntarticShaurant/android_device_xiaomi_fire.git device/xiaomi/fire
+```
+
+3. To build:
+
+```bash
+export ALLOW_MISSING_DEPENDENCIES=true
+. build/envsetup.sh
+lunch twrp_fire-eng
+mka bootimage
+```
+
+$~$
 
 ## Working features so far
 
@@ -42,32 +64,7 @@ It was announced and released in June 2023.
 - [X] screenshot
 - [X] partition SD card
 
-
-
-## WARNING
-
-This device tree is still being tested, use it at your own risk.
-That said, feel free to test it, and report bugs, we'll try our best to fix them.
-
-## How to build
-
-1. Set up the build environment following the instructions [here](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp/blob/twrp-12.1/README.md#getting-started)
-
-2. In the root folder of the fetched repo, clone the device tree:
-
-```bash
-git clone https://github.com/AntarticShaurant/android_device_xiaomi_fire.git device/xiaomi/fire
-```
-
-3. To build:
-
-```bash
-export ALLOW_MISSING_DEPENDENCIES=true
-. build/envsetup.sh
-lunch twrp_fire-eng
-mka bootimage
-```
-
+$~$
 
 ## Device specifications
 
