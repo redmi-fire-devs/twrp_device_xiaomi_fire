@@ -18,7 +18,7 @@ It was announced and released in June 2023.
 
 ### Medium checks
 - [ ] update.zip sideload
-- [ ] UI colors (red/blue inversions)
+- [X] UI colors (red/blue inversions)
 - [X] Screen goes off and on
 - [X] F2FS/EXT4 Support, exFAT/NTFS where supported
 - [X] all important partitions listed in mount/backup lists
@@ -35,7 +35,7 @@ It was announced and released in June 2023.
 - [X] battery level
 - [X] temperature
 - [ ] ~~encrypted backups~~ (no option)
-- [X] input devices via USB (USB-OTG) - keyboard, mouse and disks
+- [X] input devices via USB (USB-OTG) - keyboard (not tested), mouse (works) and disks (works)
 - [ ] ~~USB mass storage export~~ (unavailable)
 - [X] set brightness
 - [X] vibrate
