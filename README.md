@@ -40,7 +40,7 @@ $~$
 - [X] ADB
 
 ### Medium checks
-- [ ] update.zip sideload
+- [X] update.zip sideload
 - [X] UI colors (red/blue inversions)
 - [X] Screen goes off and on
 - [X] F2FS/EXT4 Support, exFAT/NTFS where supported
