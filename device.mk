@@ -38,7 +38,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 PRODUCT_PACKAGES_DEBUG += \
-    bootctrl \
+    bootctrl
 
 PRODUCT_PACKAGES += \
     bootctrl.mt6768 \
@@ -61,6 +61,12 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
+
+# API
+PRODUCT_SHIPPING_API_LEVEL := 33
+
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 33
 
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
